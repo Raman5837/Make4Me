@@ -1,0 +1,13 @@
+django 
+django-mptt 
+django-ckeditor
+pillow 
+django-admin-thumbnails 
+whitenoise 
+django-widget-tweaks 
+django-phonenumber-field = {extras = ["phonenumbers"], version = "*"}
+requests 
+razorpay 
+python-decouple 
+django-admin-honeypot 
+django-session-timeout

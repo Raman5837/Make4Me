@@ -34,6 +34,7 @@ Make4Me is an E-Commerce application built with Python Django Framework. Some of
     python manage.py runserver
     ```
 9. Login To Admin Panel - `http://127.0.0.1:8000/secureLogin/`
+ 
 10. Add Categories, Products, Add Variations, Register User, Login, Place Orders & EXPLORE SO MANY FEATURES
 
 

@@ -1,0 +1,31 @@
+<style>
+    .myStyle{
+        width: 40%;
+        margin: auto;
+
+    }
+</style>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+{% if messages %}
+    {% for message in messages %}
+    <div id="message" class="container">
+    <div {% if message.tags %} class="alert alert-{{ message.tags }} myStyle"{% endif %} role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Error: {% endif %}
+        {{ message }}
+    </div>
+    </div>
+    {% endfor %}
+    
+
+{% endif %}
+
+
+<script>
+    setTimeout(function(){
+        $('#message').fadeOut('slow')
+    }, 4000)
+</script>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->

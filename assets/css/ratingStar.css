@@ -1,0 +1,123 @@
+/* Hidding Radio Buttons */
+
+
+
+.starColor{
+    color: #DC143C;
+}
+.rate > input{
+    display: none;
+    text-align: center !important;
+    
+}
+.rate{
+    display: inline-block;
+}
+.rate > label{
+    float: right;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Showing Stars */
+.rate > label:before {
+    display: inline-block;
+    font-size: 1rem;
+    font-family: FontAwesome;
+    content: "\f005";
+    margin: 0;
+    padding: 0.3rem 0.2rem;
+    cursor: pointer;
+    
+}
+/* Half Star */
+
+.rate .half:before{
+
+    content: "\f089";
+    position: absolute;
+    padding-right: 0; 
+}
+
+/* Click and Hover */
+
+
+
+input:checked ~ label, label:hover  ~ label {
+    color: #DC143C;
+}
+
+/* Hover Highlight */
+
+input:checked + label:hover, input:checked ~ label:hover, input:checked ~ label:hover ~ label, label:hover ~ input:checked ~ label{
+    color: #DC143C;
+    opacity: .7;
+/* }
+.rate .Ratingfooter{
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+}
+.Ratingfooter .text::before{
+    content: "Rate Your Experience";
+    margin-right: 5px;
+  }
+.Ratingfooter .numb::before{
+    content: "0 out of 5";
+  }
+
+#rating10:checked ~ .Ratingfooter .text::before{
+    content: "I Just Love It";
+}
+#rating10:checked ~ .Ratingfooter .numb::before{
+    content: "5 out of 5";
+}
+#rating9:checked ~ .Ratingfooter .text::before{
+    content: "I Just Love It";
+}
+#rating9:checked ~ .Ratingfooter .numb::before{
+    content: "4.5 Out Of 5";
+}
+#rating8:checked ~ .Ratingfooter .text::before{
+    content: "I Like It";
+}
+#rating8:checked ~ .Ratingfooter .numb::before{
+    content: "4 Out Of 5";
+}
+#rating7:checked ~ .Ratingfooter .text::before{
+    content: "It's Fine";
+}
+#rating7:checked ~ .Ratingfooter .numb::before{
+    content: "3.5 Out Of 5";
+}
+#rating6:checked ~ .Ratingfooter .text::before{
+    content: "It's Fine (:";
+}
+#rating6:checked ~ .Ratingfooter .numb::before{
+    content: "3 Out Of 5";
+}
+#rating5:checked ~ .Ratingfooter .text::before{
+    content: "It's Okay 😶";
+}
+#rating5:checked ~ .Ratingfooter .numb::before{
+    content: "2.5 Out Of 5";
+}
+#rating4:checked ~ .Ratingfooter .text::before{
+    content: "It's Okay 😐";
+}
+#rating4:checked ~ .Ratingfooter .numb::before{
+    content: "2 Out Of 5";
+}
+#rating3:checked ~ .Ratingfooter .text::before{
+    content: "Disappointed 😑";
+}
+#rating3:checked ~ .Ratingfooter .numb::before{
+    content: "1.5 Out Of 5";
+}
+#rating2:checked ~ .Ratingfooter .text::before{
+    content: "Ohh! Noo 😭";
+}
+#rating2:checked ~ .Ratingfooter .numb::before{
+    content: "1 Out Of 5";
+}  */

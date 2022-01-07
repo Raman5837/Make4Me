@@ -21,12 +21,7 @@ from Cart.models import CartItem, Cart
 from StoreRoom.models import Product
 
 import razorpay
-client = razorpay.Client(auth=("rzp_test_oPffwt6U6JrDNv", "t8cf8bYE21iQUhY6QCH2oVuS"))
-
-# import stripe
-# stripe.api_key = settings.STRIPE_PRIVATE_KEY
-
-
+client = razorpay.Client(auth=("YOUR CLIENT ID", "YOUR RAZORPAY API"))
 
 # Create your views here.
 
